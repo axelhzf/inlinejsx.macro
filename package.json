@@ -1,6 +1,6 @@
 {
   "name": "inlinejsx.macro",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Inline JSX as a string",
   "keywords": [],
   "license": "MIT",
