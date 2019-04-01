@@ -1,1 +1,1 @@
-const a = "<div>hello</div>;\n";
+const a = "<div>hello</div>";

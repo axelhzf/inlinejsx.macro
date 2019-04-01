@@ -7,7 +7,10 @@ module.exports = createMacro(function inlineJSXMacro({ references, babel }) {
     if (referencePath.parentPath.type === 'JSXOpeningElement') {
       const children = referencePath.parentPath.parentPath.get('children');
       const body = children[1].getSource();
-      const formattedBody = prettier.format(body, { parser: 'babel' });
+      let formattedBody = prettier.format(body, { parser: 'babel' });
+      if (formattedBody.endsWith(";\n")) {
+        formattedBody = formattedBody.substring(0, formattedBody.length - 2);
+      }
       referencePath.parentPath.parentPath.replaceWith(
         babel.types.stringLiteral(formattedBody)
       );
