@@ -1,5 +1,4 @@
 // ast-pretty-print is really handy :)
-const printAST = require('ast-pretty-print');
 const { createMacro } = require('babel-plugin-macros');
 const prettier = require('prettier');
 
