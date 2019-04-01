@@ -1,0 +1,26 @@
+{
+  "name": "inlinejsx.macro",
+  "version": "1.0.0",
+  "description": "Inline JSX as a string",
+  "keywords": [],
+  "license": "MIT",
+  "author": "Axel Hernández Ferrera <axelhzf@gmail.com>",
+  "main": "index.macro.js",
+  "scripts": {
+    "build": "babel ./__fixtures__/input.js -o ./__fixtures__/output.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "ast-pretty-print": "^2.0.0",
+    "babel-plugin-macros": "^2.5.1",
+    "babel-plugin-tester": "^6.0.1",
+    "jest": "^24.5.0",
+    "prettier": "^1.16.4"
+  },
+  "peerDependencies": {
+    "prettier": "^1.16.4"
+  }
+}
